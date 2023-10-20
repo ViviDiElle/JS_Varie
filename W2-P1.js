@@ -2,25 +2,65 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* function numeroMaggiore(a, b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+console.log(numeroMaggiore (10,20));*/
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+/*function nonUguale(a, b) {
+  if (a===5) {
+    return "equal"
+  } else {
+    return "not equal"
+  }
+}
+
+console.log(nonUguale(3));*/
+
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisible by 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*function divisibleFive(number) {
+  if (number % 5 === 0) {
+    return "divisible by 5";
+  } else {
+    return "not divisible by 5";
+  }
+}
+
+console.log(divisibleFive(15));*/
+
+
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+ 
+
+/*function numeriInteri(number1, number2) {
+  if (number1 === 8 || number2 === 8 || number1 + number2 === 8 || number1 - number2 === 8) {
+    return "il risultato è 8"
+  } else {
+    return "il risultato non è 8"
+  }
+}
+
+console.log(numeriInteri(4, 4));*/
+
+
+
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -28,14 +68,46 @@
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+/*function totalCheckout(totalShoppingCart) {
+  if (totalShoppingCart >= 50) {
+    return "Hai diritto alla Spedizione Gratuita! Il totale da pagare è " + (totalShoppingCart + " euro")
+  } else {
+    let costoFisso = 10;
+    let costoTotale = (totalShoppingCart + costoFisso);
+    return "La spedizione ha un costo fisso pari a 10 euro. Il totale da pagare è " + (costoTotale + " euro");
+  }
+}
+
+let totalShoppingCart = 50;
+
+console.log(totalCheckout(49));*/
+
+
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function totalCheckout(totalShoppingCart) {
+  let discount = totalShoppingCart * 0.8;
+  if (discount >= 50) {
+    return "Hai diritto alla Spedizione Gratuita! Il totale - scontato del 20% - da pagare è " + (Math.round(discount*100)/100) + " euro"
+  } else {
+    let costoFisso = 10;
+    let costoTotale = (discount + costoFisso);
+    return "La spedizione ha un costo fisso pari a 10 euro. Il totale da pagare - con i prodotti scontati del 20% -  è " + (Math.round(costoTotale*100)/100) + " euro";
+  }
+}
+
+let totalShoppingCart = 50;
+
+console.log(totalCheckout(49));
+
+
+
+
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
