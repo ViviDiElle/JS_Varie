@@ -105,17 +105,26 @@ let totalShoppingCart = 50;
 
 console.log(totalCheckout(49));
 
-
-
-
-
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* ESERCIZIO FATTO CON SORT()
+let variabile1 = 12
+let variabile2 = 3
+let variabile3 = 25
+
+let numbers = [variabile1, variabile2, variabile3]
+
+numbers.sort(function (a, b) {
+  return b - a;
+});
+
+console.log(numbers);*/
+
+
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un numero fornito sia un intero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
