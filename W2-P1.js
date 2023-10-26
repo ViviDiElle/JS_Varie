@@ -130,13 +130,30 @@ console.log(numbers);*/
   Crea un algoritmo per verificare che un numero fornito sia un intero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function intero(numero) {
+  if (Number.isInteger(numero) === true) {
+    return "il numero è intero"
+  } else {
+    return "il numero non è intero"
+  }
+}
+
+console.log(intero(0.04));
+
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function pariDispari(n) {
+  if (n % 2 == 0) {
+    return "il numero è pari"
+  } else {
+    return "il numero è dispari"
+  } 
+} 
+
+console.log(pariDispari(5));
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -150,7 +167,19 @@ console.log(numbers);*/
     }
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function esercizioDieci(valore) {
+  if (valore < 5) {
+    return "Meno di 5";
+  } else if (valore < 10) {
+    return "Meno di 10";
+  } else {
+    return "Uguale a 10 o maggiore";
+  }
+}
+
+console.log(esercizioDieci(7));
+
+
 
 /*
 ESERCIZIO 11
@@ -163,14 +192,37 @@ ESERCIZIO 11
   num >= 20 - mostra in console "Huge"
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function numeriNumeri(num) {
+  if (num < 5) {
+    return "Tiny"
+  } else if (num < 10) {
+    return "Small"
+  } else if (num < 15) {
+    return "Medium"
+  } else if (num < 20) {
+    return ("Large")
+  } else {
+    return "Huge (YUUUUUGE!)"
+  }
+}
+
+console.log(numeriNumeri(21))
 
 /*  ESERCIZIO 12
-  Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
+  Usa un operatore ternario per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
   La scelta deve essere basata sul valore di un'altra variabile chiamata isMale.
+  
+  (The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function gender(isMale) {
+  return isMale ? "male" : "female";
+}
+
+console.log(gender(true));
+console.log(gender(false));
+console.log(gender(null));
+
 
 /* ESERCIZIO 13
   Mostra i numeri da 0 a 5 (incluso) in ordine ascendente utilizzando un ciclo while.
