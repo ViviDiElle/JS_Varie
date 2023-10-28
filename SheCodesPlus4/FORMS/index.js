@@ -26,7 +26,7 @@ document.getElementById("password-form").addEventListener("submit", function(eve
   let password = document.getElementById("password-input").value;
   
   // Mostrare un alert con il valore dell'input della password
-  alert("You entered your supersecret password: " + password);
+  alert(`You entered your supersecret password: ${password}`);
 });
 
 
@@ -40,6 +40,6 @@ document
     let email = document.getElementById("email-input").value;
     let username = document.getElementById("username-input").value;
 
-    alert("You entered your email " + email + " and your username " + username);
+    alert(`You entered your email (${email}) and your username (${username})`);
   });
   
