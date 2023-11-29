@@ -88,7 +88,7 @@ console.log(totalCheckout(49));*/
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
-*/
+
 
 function totalCheckout(totalShoppingCart) {
   let discount = totalShoppingCart * 0.8;
@@ -104,6 +104,8 @@ function totalCheckout(totalShoppingCart) {
 let totalShoppingCart = 50;
 
 console.log(totalCheckout(49));
+
+*/
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -128,7 +130,7 @@ console.log(numbers);*/
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un numero fornito sia un intero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
-*/
+
 
 function intero(numero) {
   if (Number.isInteger(numero) === true) {
@@ -140,10 +142,10 @@ function intero(numero) {
 
 console.log(intero(0.04));
 
-
+*/
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
-*/
+
 
 function pariDispari(n) {
   if (n % 2 == 0) {
@@ -154,7 +156,7 @@ function pariDispari(n) {
 } 
 
 console.log(pariDispari(5));
-
+*/
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   let val = 7
@@ -226,37 +228,102 @@ console.log(gender(null));
 
 /* ESERCIZIO 13
   Mostra i numeri da 0 a 5 (incluso) in ordine ascendente utilizzando un ciclo while.
-*/
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+let i = 0;
+
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+*/
 
 /* ESERCIZIO 14
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente utilizzando un ciclo for.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+*/
 
 /* ESERCIZIO 15
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*  for (let i = 0; i <= 10; i++) {
+      if (i===3 || i===8) {
+      continue;
+      }
+      console.log(i);
+    } 
+    
+    */
 
 /* ESERCIZIO 16
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+    for (let i = 0; i <= 15; i++) {
+      if (i % 2 === 0) {
+    console.log(i + " è pari");
+    } else {
+    console.log(i + " è dispari");
+    }
+      console.log(i);
+    } 
+
+*/
 
 /* ESERCIZIO 17
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3, stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log(i + " FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log(i + " Fizz");
+  } else if (i % 5 === 0) {
+    console.log(i + " Buzz");
+  } else {
+    console.log(i);
+  }
+}
+*/
 
 /* ESERCIZIO 18
   Scrivi un algoritmo per controllare il giorno della settimana. Usa uno switch-case sulla variabile "day", che può avere un valore da 1 a 7.
   Ad esempio, se il valore di "day" è 1, stampa in console "Lunedì"; se il valore fosse 3, in console dovrebbe comparire "Mercoledì".
 */
+let day = 3;
+switch (day) {
+  case 1:
+    console.log("Lunedì");
+    break;
+  case 2:
+    console.log("Martedì");
+    break;
+  case 3:
+    console.log("Mercoledì");
+    break;
+  case 4:
+    console.log("Giovedì");
+    break;
+  case 5:
+    console.log("Venerdì");
+    break;
+  case 6:
+    console.log("Sabato");
+    break;
+  case 7:
+    console.log("Domenica");
+    break;
+  default:
+    console.log("Valore non valido");
+}
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
